@@ -23,7 +23,7 @@ describe('Funciones sobre la frase "Una frase para probar"', () => {
       expect(funciones.backwardsWords(frase)).toBe('probar para frase Una');
     });
     test('palindrome sobre "Una frase para probar"  devuelve FALSE', () => {
-      expect(funciones.palindrome(frase)).toBe(false);
+      expect(funciones.palindromo(frase)).toBe(false);
     });
     test('palindrome sobre "La ruta nos aporto otro paso natural"  devuelve TRUE', () => {
       expect(funciones.palindromo(frase2)).toBe(true);
