@@ -14,15 +14,11 @@ function upperString(cadena) {
 }
 
 function titleString(cadena) {
-	let frase = cadena.split(' ');
-	for (let i = 0; i <= frase.length ; i++) {
-		 let final = frase[i].substr(0,1).toUpperCase();
-		 let mayus = frase[i].substr(1);
-		 frase[i] = mayus + final;
-	}
-	return frase.join(' ');
-
+	let palabras = cadena.split(' ');
+	let palabrasMayus = palabras.map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase());
+	return palabrasMayus.join(' ');
 }
+
 
 function backwardsLetters(cadena) {
 	return cadena.split('').reverse().join('');
